@@ -5,7 +5,7 @@ var blogs = [
         description: "Today, I finally solved the problem about compiling the tsfile, so I'm happy about that. " +
             "I also wrote down some debugging things on a random notepad so that I don't make the same errors again!",
         image: "C:/Users/sotiv/Documents/Library/Pictures/Mental-Mapping.jpg", // Use forward slashes
-        imageAlt: "This is a picture of a dog",
+        imageAlt: "Diagram of a mental mapping scenario",
         slug: "Blog-1.html"
     },
     {
@@ -15,7 +15,7 @@ var blogs = [
             " and catch up on assignments I've been putting off." +
             " This project is always a fun break though...",
         image: "C:/Users/sotiv/Documents/Library/Pictures/JS-File.png", // Use forward slashes
-        imageAlt: "Another picture of my dog",
+        imageAlt: "Picture of  JS file",
         slug: "Blog-2.html"
     }
 ];

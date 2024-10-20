@@ -16,7 +16,7 @@ const blogs: Blog[] = [ //ending here...next step is to "dynamically append..."
         description: "Today, I finally solved the problem about compiling the tsfile, so I'm happy about that. " +
         "I also wrote down some debugging things on a random notepad so that I don't make the same errors again!",
         image: "C:/Users/sotiv/Documents/Library/Pictures/Mental-Mapping.jpg", // Use forward slashes
-        imageAlt: "This is a picture of a dog",
+        imageAlt: "Mental Mapping Diagram",
         slug: "Blog-1.html"
     },
 
@@ -27,7 +27,7 @@ const blogs: Blog[] = [ //ending here...next step is to "dynamically append..."
         " and catch up on assignments I've been putting off." + 
         " This project is always a fun break though...",
         image: "C:/Users/sotiv/Documents/Library/Pictures/JS-File.png", // Use forward slashes
-        imageAlt: "Another picture of my dog",
+        imageAlt: "Picture of a JS file",
         slug: "Blog-2.html"
     }
 ];
@@ -67,13 +67,13 @@ function logBlogs(blogs: Blog[]): void{ //appending all the bogs
         imgEl.alt = blog.imageAlt;
         blogPost.appendChild(imgEl);
 
-        // Create and append link
+        
         const linkEl = document.createElement('a');
         linkEl.href = blog.slug;
         linkEl.innerHTML = "Read more";
-        linkEl.target = "_blank"; // Open link in a new tab
+        linkEl.target = "_blank"; 
         blogPost.appendChild(linkEl);
-        // Append the blog post to the container
+        
         blogContainer?.appendChild(blogPost);
     });
 }
