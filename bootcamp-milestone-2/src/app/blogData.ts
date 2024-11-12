@@ -1,4 +1,4 @@
-type Blog {
+export interface Blog {
     title: string;
     date: string;
 
@@ -9,7 +9,7 @@ type Blog {
 
 };
 
-const blogs: Blog[] = [ //ending here...next step is to "dynamically append..."
+const blogs: Blog[] = [ 
     {
         title: "First Post",
         date: "October 19th, 2024",
@@ -31,3 +31,5 @@ const blogs: Blog[] = [ //ending here...next step is to "dynamically append..."
         slug: "Blog-2.html"
     }
 ];
+
+export default blogs; 
