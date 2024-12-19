@@ -2,6 +2,8 @@ import Head from 'next/head';
 import BlogPreview from './components/blogPreview';
 import blogs from './blogData';
 import Image from 'next/image';
+import styles from './homepage.module.css'
+
 
 export default function Home() {
   return (
@@ -11,15 +13,15 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="about">
-          <div className="about-image"></div>
+        <div className="container">
+          <Image src="/me.jpg" alt="Picture of me" width={500} height={500} className = 'profile' />
           <div className="about-text">
-            <p><strong>Hello!</strong></p>
+            <p className= {styles.typingeffect}><strong>Hello! My name is Ivan Torriani. </strong></p>
             <p>
-              My name is <em>Ivan Torriani.</em> I'm from San Diego, California, and I'm currently a freshman at Cal Poly. Apart from school, I love to run, read, and hang out with new people. In the future, I want to study Math/CS in graduate school. 
+             <em> Welcome to my website!</em> I'm from San Diego, California, and I'm currently a freshman at Cal Poly. I'm super passionate about the field of AI/ML and am super excited about all it's applications in not only engineering, but literature and polotics. Apart from school, I love to run, read, and work on anything collaboratively. In the future, I want to either pursue a career in Computer Science or go to law school.  
             </p>
+            <p> <strong> Want to get in touch? </strong> <em> Visit the contact page! </em></p>
           
-            <Image src="/me.jpg" alt="Picture of me" width={500} height={500} className = 'profile' />
             
             
           </div>
@@ -27,7 +29,6 @@ export default function Home() {
 
       </main>
 
-      <footer>© 2023 My Personal Website | All Rights Reserved | Made with love ♥</footer>
     </div>
   );
 }

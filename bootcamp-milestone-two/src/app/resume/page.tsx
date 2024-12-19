@@ -2,6 +2,7 @@ import Head from 'next/head';
 import SkillSection from '../components/resumeComponents/skills';
 import ProjectSection from '../components/resumeComponents/projects';
 import ExperienceSection from '../components/resumeComponents/experience';
+import styles from './Resume.module.css'
 
 export default function Resume() {
 
@@ -23,11 +24,19 @@ export default function Resume() {
         {title: 'AI for Data Science CalPoly API', position: 'Volunteer Research Assistant', description: "Developed a CalPoly API by creating developer tools for all Cal Poly information. Used vector embeddings and cosine similiarities to reduce token cost of OpenAI server. Stored 800,000+ units of data in JSON and MongoDB"}
       ]
 
-return (
-    <div>
-      <SkillSection {...skills} />
-      <ProjectSection projects={projects} />
-      <ExperienceSection experiences={experiences} />
+  return (
+    <div className={styles.container}>
+      <div className={styles.section}>
+        <SkillSection {...skills} />
+      </div>
+  
+      <div className={styles.section}>
+        <ProjectSection projects={projects} />
+      </div>
+  
+      <div className={styles.section}>
+        <ExperienceSection experiences={experiences} />
+      </div>
     </div>
   );
 }

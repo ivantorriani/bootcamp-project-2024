@@ -1,0 +1,22 @@
+/* Ensure the container aligns content to the left */
+.container {
+    width: 80%; /* Control width for readability */
+    margin: 20px auto; /* Center container on the page horizontally */
+    padding: 10px; /* Add breathing space */
+    text-align: left; /* Left-align all text */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  /* Box around each section */
+  .section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px; /* Space between sections */
+    background-color: #fff; /* Clean white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left; /* Ensure content aligns left */
+  }
+  
+  /* Titles */
+
+  /* General text styling */

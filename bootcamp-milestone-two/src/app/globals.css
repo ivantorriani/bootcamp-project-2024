@@ -1,20 +1,19 @@
 :root {
-  --background: #FAF9F6;
-  --foreground: #000000;
+  --background: rgba(255, 255, 255, 0.1);
+  --foreground: rgba(0, 0, 0, 0.9);
   --font-family: 'Poppins', sans-serif;
   --text-align: center;
   --letter-spacing: 0.8px;
   --line-height: 1.5;
-  --primary-color: #00bcd4;
-  --secondary-color: #212121;
-  --accent-color: #6991e8;
+  --primary-color: rgba(0, 188, 212, 0.8);
+  --secondary-color: rgba(0, 0, 0, 0.8);
+  --accent-color: rgba(105, 145, 232, 0.8);
   --border-radius: 12px;
-  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  --highlight-color: #ff4081;
+  --highlight-color: rgba(255, 64, 129, 0.8);
 }
 
 body { 
-  background-color: var(--background);
+  background-color: #f9f9f9; 
   color: var(--foreground);
   font-family: var(--font-family);
   text-align: var(--text-align);
@@ -26,7 +25,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 600;
+  font-weight: bold;
   color: var(--secondary-color);
 }
 
@@ -41,12 +40,54 @@ a:hover {
   transform: scale(1.05);
 }
 
+
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
+  display: flex; /* Enables horizontal alignment */
+  align-items: center; /* Centers items vertically within the container */
+  justify-content: center; /* Centers the container's content horizontally */
+  height: 100vh; /* Ensures the container spans the full height of the screen */
 }
+
+.profile {
+  display: block;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-right: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.profile:hover{
+  transform: scale(1.005); 
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.name{
+  font-size:large;
+}
+.about-text {
+  max-width: 500px;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height:50px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.about-text:hover {
+  transform: scale(1.005); 
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.content {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  margin-left: 24px; /* Adds space between the profile and the content */
+}
+
 
 header {
   padding: 40px 0;
@@ -69,7 +110,7 @@ button:hover {
 }
 
 .card {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   padding: 20px;
@@ -93,23 +134,49 @@ footer {
   transition: all 0.3s ease;
 }
 
-.profile {
-  border: 10px solid #AEC6CF !important;
-  border-radius: 7px !important;
-  transition: transform 0.3s ease;
-}
 
-.profile:hover {
-  transform: scale(1.05);
-}
 
-body {
-  background: linear-gradient(135deg, #f7f7f7 50%, #e0e0e0 50%);
-}
+
 
 .navbar {
   display: flex;
-  justify-content: space-around; 
-  background-color: #333; 
-  padding: 10px; 
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.1));
+  box-shadow: var(--box-shadow);
+  backdrop-filter: blur(10px);
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--highlight-color);
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.profile-container {
+  display: flex;
+  align-items: center; /* Aligns items vertically centered */
+  justify-content: center; /* Optional: centers content horizontally */
+  gap: 20px; 
+}
+
+.profile-container .profile {
+  margin: 0; 
+  width: auto; 
+  max-width: 200px; 
+}
+
+.profile-container .profile-text {
+  text-align: left; 
 }

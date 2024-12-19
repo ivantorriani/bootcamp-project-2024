@@ -19,7 +19,6 @@ const ExperienceSection: React.FC<ExperienceProps> = ({ experiences }) => {
           <div key={index}>
             <h4>{experience.title}</h4>
             <p> {experience.description} </p>
-            ))
           </div>
         ))}
       </section>

@@ -8,7 +8,6 @@ export default function BlogPreview(props: Blog) {
     <div className={style.div}>
       <h3> {props.title} </h3>
       <div>
-		<Image src={props.image} alt="img" width={500} height={500} className = "portfolio" />
         <p>{props.description}</p>
 		<p>{props.date}</p>
       </div>
