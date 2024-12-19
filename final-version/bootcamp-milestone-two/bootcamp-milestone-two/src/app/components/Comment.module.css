@@ -1,0 +1,31 @@
+.commentContainer {
+    background-color: #f9f9f9; /* Off-white background */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .userName {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000; /* Solid black for username */
+  }
+  
+  .commentText {
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .commentTime {
+    display: block;
+    font-size: 0.85rem;
+    color: #666; /* Lighter gray for timestamp */
+    font-style: italic;
+  }
+  

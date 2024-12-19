@@ -1,0 +1,34 @@
+
+
+.navbar {
+    align-items: center;
+    padding: 15px 0;
+    margin: 20px 0;
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.2), rgba(249, 247, 247, 0.2));
+    backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+    transform: scale(1.4);
+    color: #000;
+
+}
+
+
+.siteBanner {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: normal;
+}
