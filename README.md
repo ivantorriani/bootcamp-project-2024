@@ -1,26 +1,36 @@
-# Developer Bootcamp 2024
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This is how we will be tracking your milestones throughout bootcamp! By the end of bootcamp, you will have a fullstack personal portfolio website.
+## Getting Started
 
----
+First, run the development server:
 
-## Setup:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-0. Click on the fork button on the top right and create a fork
-1. Click on the green <> Code button above the file list.
-2. Go to the "Local" tab
-3. Copy the HTTPS link
-4. Create a folder called **H4I**
-5. Open the **H4I** folder in your terminal
-6. Type `git clone` and paste the HTTPS link
-7. Press Enter, then `cd` into your cloned repository
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Creating a PR:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-1. Push all changes to your remote fork
-2. Go to the "Pull requests" tab in your GitHub repo
-3. Create a pull request with your changes
-   a. Double check the base is the main bootcamp repo!
-4. Fill out the PR template description!!!
-5. Assign the engineering team as code reviewers
-6. Link the milestone issue to the PR
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
