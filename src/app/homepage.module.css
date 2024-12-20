@@ -1,0 +1,100 @@
+/* Typing container */
+.typingeffect {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  white-space: nowrap; /* Keeps text on one line */
+  overflow: hidden; /* Hide overflowing text */
+  border-right: 3px solid rgba(0, 0, 0, 0.8); /* Smooth fading cursor */
+  animation: typing 3s cubic-bezier(0.4, 0, 0.2, 1), 
+             fade-caret 1s infinite ease-in-out;
+}
+
+.container {
+  /* existing styles */
+  position: relative;
+
+}
+
+.wave_text span {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+}
+
+.wave_text span:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.glass_box {
+  width: 300px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+  /* existing styles */
+  position: relative;
+  margin-top: .01px; /* Add some space above the contact */
+}
+
+
+@keyframes snowfall {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(100vh); }
+}
+
+.snowflake {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: snowfall 10s linear infinite;
+  animation-delay: calc(-10s / var(--i));
+  left: calc(100% * var(--i) / 10);
+}
+
+.minimalist_box {
+  border: 1px solid #000; /* Thin black border */
+  padding: 20px; /* Space inside the box */
+  margin: 20px; /* Space outside the box */
+  border-radius: 5px; /* Slightly rounded corners */
+  background-color: #fff; /* White background */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Minimal shadow for depth */
+}
+
+.description{
+  margin-left: auto; /* Push the description to the right */
+  font-weight: normal;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0; /* Start with no text visible */
+  }
+  to {
+    width: 100%; /* Reveal the full text */
+  }
+}
+
+/* Smooth fading cursor animation */
+@keyframes fade-caret {
+  0%, 100% {
+    border-color: rgba(0, 0, 0, 0.8);
+  }
+  50% {
+    border-color: rgba(0, 0, 0, 0.2); /* Cursor fades out */
+  }
+}

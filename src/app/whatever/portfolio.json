@@ -1,0 +1,30 @@
+
+[
+    {
+        "title": "Sybil Vane",
+        "date":"January 15t, 2024",
+        "description": "Sybil Vane is a sentiment analysis tool designed to detect media bias in real-time events using Python and spaCy's NLP models. It leverages JSON dictionaries to store and analyze over 350 articles and 560,000 words, optimizing named entity recognition through a custom training algorithm."
+    },
+
+    {
+        "title": "Market Vision",
+        "date": "February 14, 2024",
+        "description": "Developed a financial analysis model leveraging pandas to evaluate and score 30 active stocks daily based on technical and fundamental criteria. Enhanced efficiency by optimizing OpenAI API integration, reducing costs by 98.5% through refined data organization and training methodologies."
+
+    },
+
+    {
+        "title": "Computer Vision Applications",
+        "date": "August 29, 2024",
+        "description":"Executed computer vision and image transformation tasks using pre-trained neural and cycle-GAN networks in PyTorch. Structured over 700 multi-dimensional data batches with NumPy and integrated ImageNet's extensive dataset to enhance model accuracy and functionality."
+
+    },
+
+    {
+        "title": "Rilke Analytics",
+        "date": "September 5, 2024",
+        "description": "Developed AI-driven tools to enhance student learning by incorporating reflection intervals and targeted weakness identification through custom-trained Natural Entity Recognition models. Inspired by Rainer Maria Rilke Letters to a Young Poet, the approach fosters thoughtful and personalized study optimization."
+    },
+
+
+]
