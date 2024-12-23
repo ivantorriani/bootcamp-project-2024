@@ -21,7 +21,7 @@ export default function Blog() {
             <BlogPreview 
               title={blog.title}
               description={blog.description}
-              date={blog.date}
+              date={new Date(blog.date).toLocaleDateString()}
               image = {blog.image}
             />
           </Link>
