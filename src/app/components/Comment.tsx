@@ -1,34 +1,20 @@
-import React from "react";
-import styles from "./Comment.module.css";
+// components/Comment.tsx
 
-interface IComment {
+import React from 'react';
+
+interface ICommentProps {
   user: string;
   comment: string;
-  time: Date;
+  time: string;
 }
 
-type CommentProps = {
-  comment: IComment;
-};
-
-function parseCommentTime(time: Date) {
-  return time.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-  });
-}
-
-function Comment({ comment }: CommentProps) {
+const Comment: React.FC<ICommentProps> = ({ user, comment, time }) => {
   return (
-    <div className={styles.commentContainer}>
-      <h4 className={styles.userName}>{comment.user}</h4>
-      <p className={styles.commentText}>{comment.comment}</p>
-      <span className={styles.commentTime}>{parseCommentTime(comment.time)}</span>
+    <div>
+      <p><strong>{user}</strong> says:</p>
+      <p>{comment}</p>
+      <p><em>{time}</em></p> {/* time is now a string */}
     </div>
   );
-}
-
+};
 export default Comment;
